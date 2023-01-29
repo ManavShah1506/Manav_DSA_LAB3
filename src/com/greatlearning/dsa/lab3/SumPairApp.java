@@ -20,7 +20,7 @@ public class SumPairApp {
 		if(key<root.data)
 			root.leftNode= insert(root.leftNode,key);
 		else
-		root.rightNode = insert(root.rightNode,key);
+			root.rightNode = insert(root.rightNode,key);
 		return root;
 	}
 
@@ -36,19 +36,19 @@ public class SumPairApp {
 		root = SPA.insert(root, 70);
 		int sum = 130;
 		SPA.findPairWithSum(root,sum);
-//		System.out.println("In Order Traversal Data: ");
-//		SPA.inOrder(root);
+		//		System.out.println("In Order Traversal Data: ");
+		//		SPA.inOrder(root);
 	}
-//	private void inOrder(Node root) {
-//		// TODO Auto-generated method stub
-//		if(root==null) {
-//			return;
-//		}
-//		else
-//			inOrder(root.leftNode);
-//		System.out.print(root.data+" ");
-//		inOrder(root.rightNode);
-//	}
+	//	private void inOrder(Node root) {
+	//		// TODO Auto-generated method stub
+	//		if(root==null) {
+	//			return;
+	//		}
+	//		else
+	//			inOrder(root.leftNode);
+	//		System.out.print(root.data+" ");
+	//		inOrder(root.rightNode);
+	//	}
 	private void findPairWithSum(Node root, int sum) {
 		// TODO Auto-generated method stub
 		Set<Integer> set = new HashSet<Integer>();
